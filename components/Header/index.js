@@ -11,8 +11,9 @@
 
 function Header(data) {
     //create elements
-    console.log(data);
+    console.log('data');
   const header = document.createElement('div')
+  console.log(header)
   const date = document.createElement ('span')
   const name = document.createElement('h1')
   const temp = document.createElement('span')
@@ -25,9 +26,14 @@ function Header(data) {
     header.appendChild(name);
     header.appendChild(temp);
       //add content
-    date.textContent = `name: ${data.date}`;
-    name.textContent = `username: ${data.name}`;
-    temp.textContent= `location: ${data.temp}`;
+    date.textContent = `SMARCH 28,2019`;
+    name.textContent = `Lambda Times`;
+    temp.textContent= `98°`;
     //appending div to page
-    header.appendChild(header)
+    // header.appendChild(header)
+    console.log('header', header)
+    return header
 }
+
+const headerContainer = document.querySelector('.header-container')
+headerContainer.appendChild(Header())
