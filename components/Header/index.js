@@ -24,24 +24,10 @@ function Header(data) {
     header.appendChild(date);
     header.appendChild(name);
     header.appendChild(temp);
-    cardInfo.appendChild(username);
-    cardInfo.appendChild(location);
-    cardInfo.appendChild(profile);
-    cardInfo.appendChild(profileLink);
-    cardInfo.appendChild(followers);
-    cardInfo.appendChild(following);
-    cardInfo.appendChild(bio);
-    profile.appendChild(profileLink);
       //add content
-    name.textContent = `name: ${data.name}`;
-    username.textContent = `username: ${data.login}`;
-    location.textContent= `location: ${data.location}`;
-    profileLink.src = `profileLink: ${data.html_url}`;
-    profile.textContent= `profile: ${data.html_url}`;
-    followers.textContent = `followers: ${data.followers}`;
-    following.textContent = `following: ${data.following}`;
-    bio.textContent = `bio: ${data.bio}`;
+    date.textContent = `name: ${data.date}`;
+    name.textContent = `username: ${data.name}`;
+    temp.textContent= `location: ${data.temp}`;
     //appending div to page
-    cards.appendChild(card)
-
+    header.appendChild(header)
 }

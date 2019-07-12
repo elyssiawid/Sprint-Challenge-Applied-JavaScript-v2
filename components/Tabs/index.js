@@ -14,7 +14,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
     var array = [];
     array.push(responseData);
     array.forEach(data => {
-      createCard (data);
+      Tabs(data);
     });
   })
   .catch(function (error) {
@@ -23,3 +23,16 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
 
 
   const topics = document.querySelector('.topics');
+function Tabs(Data) {
+    //create elements
+    console.log(Data);
+  const tab = document.createElement('tab')
+  //elements with classes
+ tab.classList.add('tab');
+    //append
+    header.appendChild(date);
+      //add content
+    tab.textContent = `topic here: ${data.date}`;
+    //appending div to page
+    tab.appendChild(tab)
+}
